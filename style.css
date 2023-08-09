@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Overlock', cursive;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2015/06/30/18/36/st-826688_1280.jpg");
+    /* background-image: url("https://cdn.pixabay.com/photo/2017/08/28/13/34/bar-2689548_1280.jpg"); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2013/12/31/21/47/restaurant-237060_1280.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #222;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* .header section {
+    border: 1px solid magenta;
+} */
+
+.header {
+    background-color: rgba(28, 28, 28, 0.3);
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    margin: 3rem auto 0 auto;
+    padding: 2rem;
+    width: 95%;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-brand {
+    align-self: center;
+    font-size: 1.875rem;
+    font-weight: 800;
+}
+
+.header-brand-icon {
+    height: 1.875rem;
+}
+
+.header-brand-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Petrona', serif;
+}
+
+.header-menu {
+    align-self: center;
+}
+
+.header-menu-lista {
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu-item {
+    display: inline;
+    list-style-type: none;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.header-menu-link {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+.header-menu-link:hover {
+    /* color: white; */
+    color: darksalmon;
+    border-bottom: 2px solid darksalmon;
+    background-color: rgba(28, 28, 28, 0.65);
+    /* background-color: rgba(28, 28, 28, 0.5); */
+    /* text-decoration: underline; */
+}
+
+.icon-menu {
+    color: whitesmoke;
+    font-size: 2rem;
+    display: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.main {
+    min-height: calc(100vh - 8.625rem);
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+
+    /* border: 1px solid lime; */
+}
+
+.main-box {
+    /* border: 1px solid yellow; */
+    border-right: 2px solid whitesmoke;
+    background-color: rgba(28, 28, 28, 0.5);
+    padding: 0 1rem;
+    width: 50%;
+    align-self: center;
+}
+
+.main-content {
+    background-color: rgba(245, 245, 245, 0.85);
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+}
+
+.content-img {
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+}
+
+.content-img-about {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/12/16/59/noodle-1735134_1280.jpg);
+}
+
+.content-img-contact {
+    /* background-image: url(https://cdn.pixabay.com/photo/2020/06/15/05/55/phone-5300447_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/19/12/59/phone-5190644_1280.jpg);
+}
+
+.content-txt {
+    /* border: 1px solid red; */
+    
+    width: 60%;
+    padding: 0.625rem;
+}
+
+.content-title {
+    color: orangered;
+    font-weight: 900;
+}
+
+.content-subtitle {
+    color: orangered;
+    font-size: 1.25rem;
+}
+
+.content-paragraph {
+    color: #101010;
+}
+
+.content-division {
+    border: 1px solid salmon;
+}
+
+.link-whatsapp {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #128C7E;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+.link-whatsapp:hover {
+    background-color: #075E54;
+}
+
+.main-titulo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    /* color: lightgoldenrodyellow; */
+    color: lightsalmon;
+}
+
+.index-main-frase {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    padding-bottom: 0.375rem;
+}
+
+.form-text {
+    padding: 0.5rem 0.2rem;
+    width: 100%;
+    border: 1px solid salmon;
+    color: orangered;
+    border-radius: 0.4rem;
+    outline: none;
+}
+
+.form-text:focus {
+    border: 2px solid orangered;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form-button {
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+    color: whitesmoke;
+}
+
+.form-button-send {
+    background-color: forestgreen;
+    margin-right: 0.5rem;
+}
+
+.form-button-send:hover {
+    background-color: green;
+}
+
+.form-button-reset {
+    background-color: #606060;
+    margin-left: 0.5rem;
+}
+
+.form-button-reset:hover {
+    background-color: #484848;
+}
+
+.link-cardapio {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* background-color: goldenrod; */
+    background-color: darksalmon;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+    position: fixed;
+    left: 40%;
+    right: 40%;
+    bottom: 2rem;
+    text-align: center;
+}
+
+.link-cardapio:hover {
+    /* background-color: darkgoldenrod; */
+    background-color: salmon;
+    color: whitesmoke;
+}
+
+.footer {
+    border-top: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: #222;
+    min-height: 10rem;
+    margin: 0;
+}
+
+.footer-brand {
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    font-weight: 800;
+    font-family: 'Petrona', serif;
+}
+
+.footer-brand-icon {
+    height: 1.5rem;
+}
+
+.footer-box {
+    /* border: 1px solid lime; */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.footer-info {
+    margin: 0 0 1.5rem 0;
+}
+
+.footer-info-media {
+    margin: 0 0 0.75rem 0;
+}
+
+.footer-left {
+    /* border: 1px solid magenta; */
+    width: 35%;
+
+    padding-right: 0.75rem;
+    /* border-right: 1px solid gray; */
+}
+
+.footer-right {
+    /* border: 1px solid orangered; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: right;
+
+    padding-left: 0.75rem;
+    /* border-left: 1px solid gray; */
+}
+
+/* .footer-right-top, .footer-right-center, .footer-right-bottom {
+    border: 1px solid lime;
+} */
+
+.footer-media {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding-right: 0.5rem;
+}
+
+.footer-media:hover {
+    color: darksalmon;
+}
+
+.atention {
+    color: yellow;
+}
+
+.footer-link {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: salmon;
+    text-decoration: underline;
+}
+
+.icon-whatsapp {
+    color: #25D366;
+}
+
+.icon-phone {
+    color: salmon;
+}
+
+/* Responsivo Tablet */
+
+@media screen and (max-width: 1024px) {
+    .main-box {
+        width: 100%;
+    }
+    
+    .content-img {
+        display: none;
+    }
+
+    .content-txt {
+        width: 100%;
+    }
+}
+
+/* Responsivo Celular */
+
+@media screen and (max-width: 480px) {
+    p, input, select {
+        font-size: 1.125rem;
+    }
+
+    .header-menu-link {
+        display: none;
+    }
+
+    .icon-menu {
+        display: inline;
+    }
+
+    .main-box {
+        align-self: flex-start;
+        margin-top: 3rem;
+    }
+
+    .link-cardapio {
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .footer-box {
+        display: block;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .footer-right {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .footer-media {
+        font-size: 2.5rem;
+        padding-right: 1.5rem;
+    }
+}

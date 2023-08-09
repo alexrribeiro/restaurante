@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Bonchef</title>
+    <link rel="shortcut icon" href="icons/chef-2c.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/social-media/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section class="header-brand">
+            <a href="index.html" class="header-brand-link">bon<img src="icons/chef-2c.svg" alt="" class="header-brand-icon">chef</a>
+        </section>
+        <section class="header-menu">
+            <ul class="header-menu-lista">
+                <li class="header-menu-item">
+                    <a href="index.html" class="header-menu-link">Página Inicial</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="sobre.html" class="header-menu-link">Sobre nós</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="files/cardapio.pdf" class="header-menu-link" target="_blank">Cardápio</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="contato.html" class="header-menu-link">Contato</a>
+                </li>
+                <li class="header-menu-item header-menu-button">
+                    <i class="icon-menu"></i>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main-content">
+            <div class="content-img content-img-contact">
+                &nbsp;
+            </div>
+            <div class="content-txt">
+                <h1 class="content-title">Contato</h1>
+                <p class="content-paragraph">Preencha o formulário abaixo para entrar em contato conosco:</p>
+                <form action="javascript:alert('Dados enviados com sucesso!')">
+                    <div class="form-field">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-text" id="nome" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-text" id="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="telefone" class="form-label">Telefone/Celular:</label>
+                        <input type="tel" class="form-text" id="telefone">
+                    </div>
+                    <div class="form-field">
+                        <label for="tipocontato" class="form-label">Tipo de contato:</label>
+                        <select name="tipo-de-contato" id="tipocontato" class="form-text">
+                            <option value="duvida">Dúvida</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outro">Outro</option>
+                            <option value="selecione" selected>Selecione</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="mensagem" class="form-label">Sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="8" class="form-text form-textarea"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" value="Enviar" class="form-button form-button-send">
+                        <input type="reset" value="Limpar" class="form-button form-button-reset">
+                    </div>
+
+                </form>
+
+                <hr class="content-division">
+                <p class="content-paragraph">Ou, se preferir, entre em contato via Whatsapp:</p>
+                <a href="https://web.whatsapp.com" class="link-whatsapp" target="_blank">Contato via Whatsapp</a>
+                <p class="content-paragraph">Para serviço de delivery, use a forma de contato via Whatsapp.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-box">
+            <section class="footer-left">
+                <p class="footer-brand">bon<img src="icons/chef-2c.svg" alt="" class="footer-brand-icon">chef</p>
+                <p class="footer-info">
+                    <span class="bold">Visite-nos: </span><br>
+                    Av. Peixoto de Castro, 420 - Bairro da Cruz. Lorena/SP
+                </p>
+                <p class="footer-info">
+                    <span class="bold">Informações e entregas: </span><br>
+                    <i class="icon-phone"> </i>(12) 3333-3333<br>
+                    <i class="icon-whatsapp"> </i>(12) 99999-9999
+                </p>
+                <p class="footer-info">
+                    <span class="bold">Horários de funcionamento: </span><br>
+                    Segunda a sexta: 10h00-14h00 e 18h00-22h00<br>
+                    Sábado: 10h00-16h00 e 18h00-00h00<br>
+                    Domingos e feriados: 14h00-22h00
+                    </p>
+                </p>
+            </section>
+            <section class="footer-right">
+                <div class="footer-right-top">
+                    <p class="footer-info footer-info-media"><span class="bold">Siga-nos nas redes sociais:</span></p>
+                    <a href="https://facebook.com/" class="footer-media" title="Facebook"><i class="icon-facebook1"></i></a>
+                    <a href="https://instagram.com/" class="footer-media" title="Instagram"><i class="icon-instagram"></i></a>
+                </div>
+                
+                <div class="footer-right-center">
+                    <p class="footer-info atention"><span class="bold">Atenção: </span>esta é uma empresa <span class="bold">fictícia</span>, criada apenas para fins de exemplo.</p>
+                </div>
+
+                <div class="footer-right-bottom">
+                    <p class="footer-info">&copy; <script>javascript: document.write(new Date().getFullYear());</script> | <a href="https://alexrribeiro.github.io/curriculum" class="footer-link" target="_blank">Alex Ramos Ribeiro</a></p>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
