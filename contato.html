@@ -21,23 +21,28 @@
             <a href="index.html" class="header-brand-link">bon<img src="icons/chef-2c.svg" alt="" class="header-brand-icon">chef</a>
         </section>
         <section class="header-menu">
-            <ul class="header-menu-lista">
+            <nav class="header-nav hidden">
+                <ul class="header-menu-lista"></ul>
                 <li class="header-menu-item">
-                    <a href="index.html" class="header-menu-link">Página Inicial</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="sobre.html" class="header-menu-link">Sobre nós</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="files/cardapio.pdf" class="header-menu-link" target="_blank">Cardápio</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="contato.html" class="header-menu-link">Contato</a>
-                </li>
-                <li class="header-menu-item header-menu-button">
-                    <i class="icon-menu"></i>
-                </li>
-            </ul>
+                    <a href="index.html" class="header-menu-link open-menu">Página Inicial</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="sobre.html" class="header-menu-link open-menu">Sobre nós</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="files/cardapio.pdf" class="header-menu-link open-menu" target="_blank">Cardápio</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="contato.html" class="header-menu-link open-menu">Contato</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="" class="header-menu-link open-menu orange hidden-desktop" id="close-menu">Fechar</a>
+                    </li>
+                    <!-- <li class="header-menu-item header-menu-button">
+                    </li> -->
+                </ul>
+            </nav>
+            <i class="icon-menu"></i>
         </section>
     </header>
     <main class="main">
@@ -128,5 +133,6 @@
             </section>
         </div>
     </footer>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -87,6 +87,10 @@ body {
     font-weight: 700;
 }
 
+.hidden-desktop {
+    display: none;
+}
+
 .main {
     min-height: calc(100vh - 8.625rem);
     width: 95%;
@@ -374,12 +378,35 @@ body {
         font-size: 1.125rem;
     }
 
-    .header-menu-link {
+    .header-nav {
+        background-color: #222;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .header-menu-link, .hidden {
         display: none;
+    }
+    
+    .open-menu {
+        display: block;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
     }
 
     .icon-menu {
         display: inline;
+    }
+
+    .orange {
+        color: salmon;
     }
 
     .main-box {
